@@ -1,0 +1,9 @@
+.background{
+    background-image: linear-gradient(215deg, #F7345F 75%, #5F36B1 25%);
+}
+.text{
+    font-weight: bold;
+}
+.navbtn{
+    background-color: #fff;
+}
