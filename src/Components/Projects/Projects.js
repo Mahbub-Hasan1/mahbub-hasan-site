@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from '../Shared/Navbar/Navbar';
+import LinkIcon from '@material-ui/icons/Link';
+import { GitHub } from '@material-ui/icons';
 
 const FakeProjectsData = [
     {
@@ -62,8 +64,8 @@ const Projects = () => {
             <Navbar></Navbar>
             <div className="projectsBackground">
                 <div className="container">
-                    <div>
-                        <h3 className="text-white">My Projects</h3>
+                    <div><br></br>
+                        <h3 className="text-white text-center">My Projects</h3><br></br>
                     </div>
                     <div className=" d-flex flex-wrap">
                         {projectsData.map(project =>
@@ -75,10 +77,9 @@ const Projects = () => {
                                         <p className="card-text">{project.Description}</p>
                                     </div>
                                     <div className="card-footer">
-                                        <small className="text-muted">
-                                            <a href={project.githubLink}>{project.githubLink}</a>
-                                        =
-                                    <a href={project.liveLink}>{project.liveLink}</a>
+                                        <small className="text-muted"> 
+                                            <a href={project.githubLink}><GitHub className="icon" /></a> 
+                                            <a href={project.liveLink}><LinkIcon style={{float: 'right'}} className="icon" /></a> 
                                         </small>
                                     </div>
                                 </div>

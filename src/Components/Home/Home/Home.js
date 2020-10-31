@@ -5,21 +5,21 @@ import Header from '../Header/Header';
 import MySomeArticles from '../MysomeArticles/MySomeArticles';
 import MySomeWorks from '../MySomeWorks/MySomeWorks';
 import ParticlesBg from 'particles-bg'
+import WorksImg from '../MySomeWorks/WorksImg';
 
 const Home = () => {
     return (
         <>
-        <div>
             <Navbar></Navbar>
             <Header></Header>
-            
-        </div>
         <div className="homeBackground">
             <MySomeWorks></MySomeWorks>
+            <WorksImg></WorksImg><br></br>
+            
             <MySomeArticles></MySomeArticles>
             <Footer></Footer>
+            <ParticlesBg type="thick" bg={true} />
         </div>
-        <ParticlesBg type="thick" bg={true} />
         </>
         
     );

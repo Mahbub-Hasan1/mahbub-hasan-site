@@ -4,6 +4,21 @@
 .text{
     font-weight: bold;
 }
+.nav-link:active {
+    background-color: #5F36B1;
+    box-shadow: 0 3px #D00C37;
+    border-radius: 10px;
+  }
 .navbtn{
     background-color: #fff;
+}
+@media (max-width:355px) {
+    .NavLogo{
+        font-size: 20px;
+    }
+}
+@media (max-width:251px) {
+    .NavLogo{
+        font-size: 15px;
+    }
 }

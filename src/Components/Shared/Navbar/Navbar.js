@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './Navbar.css'
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
+import ViewHeadlineIcon from '@material-ui/icons/ViewHeadline';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -16,9 +17,9 @@ const Navbar = () => {
     const classes = useStyles();
     return (
         <nav className="navbar navbar-expand-lg background">
-            <h2 className="text-white">MAHBUB-HASAN</h2>
+            <h2 className="text-white NavLogo">MAHBUB-HASAN</h2>
             <button className="navbar-toggler navbtn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
+                <ViewHeadlineIcon color="secondary" />
             </button>
 
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -40,7 +41,7 @@ const Navbar = () => {
                     </li>
 
                     <li className="nav-item">
-                        <a href="../../imges/MD.MAHBUB HASAN.pdf" download="ResumeMAHBUB">
+                        <a href="https://drive.google.com/file/d/163NJKTjH2A4MFx8MnodnQmnffZdPIy9C/view?usp=sharing" >
                         <Button variant="contained" color="primary">
                             Resume
                         </Button>

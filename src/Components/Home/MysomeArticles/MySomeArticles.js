@@ -1,4 +1,6 @@
 import React from 'react';
+import LinkIcon from '@material-ui/icons/Link';
+import { GitHub } from '@material-ui/icons';
 
 const MySomeArticles = () => {
     return (
@@ -14,7 +16,7 @@ const MySomeArticles = () => {
                         <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
                     <div className="card-footer">
-                        <small className="text-muted">Last updated 3 mins ago</small>
+                    <small className="text-muted"> <a href=""><GitHub className="icon" /></a> <a href=""><LinkIcon style={{float: 'right'}} className="icon" /></a> </small>
                     </div>
                 </div>
                 <div class="card">
@@ -24,7 +26,7 @@ const MySomeArticles = () => {
                         <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                     </div>
                     <div className="card-footer">
-                        <small className="text-muted">Last updated 3 mins ago</small>
+                    <small className="text-muted"> <a href=""><GitHub className="icon" /></a> <a href=""><LinkIcon style={{float: 'right'}} className="icon" /></a> </small>
                     </div>
                 </div>
                 <div className="card">
@@ -34,7 +36,7 @@ const MySomeArticles = () => {
                         <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                     </div>
                     <div className="card-footer">
-                        <small className="text-muted">Last updated 3 mins ago</small>
+                    <small className="text-muted"> <a href=""><GitHub className="icon" /></a> <a href=""><LinkIcon style={{float: 'right'}} className="icon" /></a> </small>
                     </div>
                 </div>
             </div>
