@@ -22,11 +22,11 @@ const FakeProjectsData = [
     },
     {
         id: '3',
-        img: 'https://imgur.com/5pI9nyI.png',
-        name: 'ExamHelpBD',
-        Description: 'ExamHelpBD is the Edtech platform for Teachers and Students. Any teacher can post notes and questions here. Students can read and practice tests from anywhere and anytime.',
-        liveLink: 'CCC',
-        githubLink: 'CCC',
+        img: 'https://mahbubhasan.netlify.app/images/TravelGuru.PNG',
+        name: 'Travel Guru',
+        Description: 'A single-page web app Used three methods of signing in. Where a user can select a desired destination and book a hotel there.',
+        liveLink: 'https://travle-guru-mahbub.firebaseapp.com',
+        githubLink: 'https://github.com/Md-Mahbub-Hasan/travel-guru-mahbub',
     },
     {
         id: '4',
@@ -46,11 +46,11 @@ const FakeProjectsData = [
     },
     {
         id: '6',
-        img: 'https://imgur.com/YfUT392.png',
-        name: 'COVID-19 Stats',
-        Description: 'It is a API based APP for showing Global and Country wise Coronavirus Statistics .',
-        liveLink: 'CCC',
-        githubLink: 'CCC',
+        img: 'https://i.imgur.com/1sZNRz2.png',
+        name: 'volunteer-network',
+        Description: 'This is a volunteer Admin & Client base Project. This system volunteers to work on an online note base project.',
+        liveLink: 'https://volunteer-network-a77e6.web.app',
+        githubLink: 'https://github.com/Md-Mahbub-Hasan/volunteer-network-client',
     },
 ]
 
@@ -77,10 +77,15 @@ const Projects = () => {
                                         <p className="card-text">{project.Description}</p>
                                     </div>
                                     <div className="card-footer">
-                                        <small className="text-muted"> 
-                                            <a href={project.githubLink}><GitHub className="icon" /></a> 
-                                            <a href={project.liveLink}><LinkIcon style={{float: 'right'}} className="icon" /></a> 
-                                        </small>
+                                    <small className="text-muted">
+                                        <a href={project.githubLink}>
+                                            <GitHub className="icon" />
+                                        </a>
+
+                                        <a href={project.liveLink}>
+                                            <LinkIcon style={{ float: 'right' }} className="icon" />
+                                        </a> 
+                                    </small>
                                     </div>
                                 </div>
                             </div>
