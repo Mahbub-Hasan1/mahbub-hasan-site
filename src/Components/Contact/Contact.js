@@ -14,16 +14,16 @@ const Contact = () => {
                     <h1 style={{ color: '#fff', fontWeight: 'bold' }}>Get In Touch</h1>
                     <p className="text-white">I'd Love to hear from you . Whether you have a question or just want to say hi, fell free to drop a message. I'll try my best to get back to you!</p>
                     <p className="icon-mt">
-                        <a href="https://www.linkedin.com/in/mahbub-hasan-b112b01ba/" target="_blank">
+                        <a href="https://www.linkedin.com/in/mahbub-hasan-b112b01ba/" target="_blank" rel="noopener noreferrer">
                             <LinkedInIcon className="icon" style={{ fontSize: '30px' }} />
                         </a>
-                        <a href="https://mahbub-hasan.netlify.app/" target="_blank">
+                        <a href="https://mahbub-hasan.netlify.app/" target="_blank" rel="noopener noreferrer">
                             <WebIcon className="icon" style={{ fontSize: '30px' }} />
                         </a>
-                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank">
+                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" rel="noopener noreferrer">
                             <MailOutlineIcon className="icon" style={{ fontSize: '30px' }} />
                         </a>
-                        <a href="https://github.com/Md-Mahbub-Hasan" target="_blank">
+                        <a href="https://github.com/Md-Mahbub-Hasan" target="_blank" rel="noopener noreferrer">
                             <GitHubIcon className="icon" style={{ fontSize: '30px' }} />
                         </a>
                     </p>
@@ -33,7 +33,7 @@ const Contact = () => {
                         <div className="">
 
                             <div className="col-md-9 mx-auto">
-                                <form  action="mailto:mahbub.hasan.9000@gmail.com" method="post" enctype="text/plain">
+                                <form action="mailto:mahbub.hasan.9000@gmail.com" method="post" enctype="text/plain">
                                     <div className="form-group">
                                         <input type="text" name="name" className="form-control" placeholder="Name *" />
                                     </div>
@@ -44,7 +44,7 @@ const Contact = () => {
                                         <textarea name="comment" className="form-control" id="" cols="30" rows="10" placeholder="Message *"></textarea>
                                     </div>
                                     <div className="form-group">
-                                        <input type="submit" value="Send"  style={{ width: '40%', backgroundColor: '#111430', marginLeft: '15px' }}  className="btn btn-primary btn-lg"/>
+                                        <input type="submit" value="Send" style={{ width: '40%', backgroundColor: '#111430', marginLeft: '15px' }} className="btn btn-primary btn-lg" />
                                     </div>
                                 </form>
                             </div>

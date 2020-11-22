@@ -19,16 +19,16 @@ const About = () => {
                     <h5 className="header-h4 name">I'm <b>Mahbub Hasan</b></h5>
                     <p className="header-p">A self-motivated and enthusiastic web developer with a deep interest in JavaScript. To work in the Software industry with modern web technologies of different local & multinational Software/ IT agencies of Bangladesh and grow rapidly with increasing responsibilities.</p>
                     <p className="icon-mt">
-                        <a href="https://www.linkedin.com/in/mahbub-hasan-b112b01ba/" target="_blank">
+                        <a href="https://www.linkedin.com/in/mahbub-hasan-b112b01ba/" target="_blank" rel="noopener noreferrer">
                             <LinkedInIcon className="icon" style={{ fontSize: '30px' }} />
                         </a>
-                        <a href="https://mahbub-hasan.netlify.app/" target="_blank">
+                        <a href="https://mahbub-hasan.netlify.app/" target="_blank" rel="noopener noreferrer">
                             <WebIcon className="icon" style={{ fontSize: '30px' }} />
                         </a>
-                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank">
+                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" rel="noopener noreferrer">
                             <MailOutlineIcon className="icon" style={{ fontSize: '30px' }} />
                         </a>
-                        <a href="https://github.com/Md-Mahbub-Hasan" target="_blank">
+                        <a href="https://github.com/Md-Mahbub-Hasan" target="_blank" rel="noopener noreferrer">
                             <GitHubIcon className="icon" style={{ fontSize: '30px' }} />
                         </a>
                     </p>

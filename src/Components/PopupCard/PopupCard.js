@@ -48,20 +48,20 @@ const PopupCard = (props) => {
 
         <button onClick={closeModal} className="close-btn" >❌close</button>
 
-        <a className="link-icon" href="https://creative-agency-32149.web.app/" target="_blank">
+        <a className="link-icon" href="https://creative-agency-32149.web.app/" target="_blank" rel="noopener noreferrer">
           <h2 ref={_subtitle => (subtitle = _subtitle)}>
             {project.name}
             <LinkIcon className="" />
           </h2>
         </a>
 
-        <div className="d-flex">
+        <div className="row d-flex">
 
           <div>
             {
               project.liveWeb ?
                 <>
-                  <a className="link-icon" href={project.liveWeb} target="_blank">
+                  <a className="link-icon" href={project.liveWeb} target="_blank" rel="noopener noreferrer">
                     <LinkIcon className="" />
                     Live Website
                 </a><br />
@@ -72,7 +72,7 @@ const PopupCard = (props) => {
             {
               project.liveApi ?
                 <>
-                  <a className="link-icon" href={project.liveApi} target="_blank">
+                  <a className="link-icon" href={project.liveApi} target="_blank" rel="noopener noreferrer">
                     <LinkIcon className="" />
                     Live API Server
                 </a><br />
@@ -81,11 +81,11 @@ const PopupCard = (props) => {
                 ''
             }
           </div>
-          <div style={{ marginLeft: '30px' }}>
+          <div className="repoStyle">
             {
               project.FrontEndRepo ?
                 <>
-                  <a className="link-icon" href={project.FrontEndRepo} target="_blank">
+                  <a className="link-icon" href={project.FrontEndRepo} target="_blank" rel="noopener noreferrer">
                   <GitHubIcon  />
                     Front-end Repository
                 </a><br />
@@ -96,7 +96,7 @@ const PopupCard = (props) => {
             {
               project.BackEndRepo ?
                 <>
-                  <a className="link-icon" href={project.BackEndRepo} target="_blank">
+                  <a className="link-icon" href={project.BackEndRepo} target="_blank" rel="noopener noreferrer">
                     <GitHubIcon />
                     Back-end Repository
                 </a><br />

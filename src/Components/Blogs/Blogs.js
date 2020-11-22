@@ -57,7 +57,7 @@ const FakeBlogsData = [
 const Blogs = () => {
 
     const data = FakeBlogsData;
-    const [blogsData, setBlogsData] = useState(data);
+    const [blogsData] = useState(data);
 
     return (
         <>
@@ -69,6 +69,7 @@ const Blogs = () => {
                         <br />
                     </div>
                     <div className=" d-flex flex-wrap">
+                        
                         {blogsData.map(blogs =>
                             <div className="card-deck  col-md-4" style={{ marginBottom: '20px' }}>
                                 <div key={blogs.id} className="card">
@@ -77,10 +78,17 @@ const Blogs = () => {
                                         <h5 className="card-title">{blogs.name}</h5>
                                         <p className="card-text">{blogs.Description}</p>
                                     </div>
+
                                     <div className="card-footer">
-                                        <small className="text-muted"> 
-                                            <a href={blogs.githubLink}><GitHub className="icon" /></a> 
-                                            <a href={blogs.liveLink}><LinkIcon style={{float: 'right'}} className="icon" /></a> 
+
+                                        <small className="text-muted">
+                                            <a href={blogs.githubLink} target="_blank" rel="noopener noreferrer">
+                                                <GitHub className="icon" />
+                                            </a>
+                                            
+                                            <a href={blogs.liveLink} target="_blank" rel="noopener noreferrer">
+                                                <LinkIcon style={{ float: 'right' }} className="icon" />
+                                            </a>
                                         </small>
                                     </div>
                                 </div>

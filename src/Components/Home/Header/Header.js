@@ -23,16 +23,16 @@ const Header = () => {
                     <h4 className="text-white header-h4"><b>MERN / Full Stack Developer</b></h4>
                     <p className="text-white header-p"><b>A self-motivated and enthusiastic web developer with a deep interest in JavaScript. To work in the Software industry with modern web technologies of different local & multinational Software/ IT agencies of Bangladesh and grow rapidly with increasing responsibilities.</b></p>
                     <p className="icon-mt">
-                        <a href="https://www.linkedin.com/in/mahbub-hasan1" target="_blank">
+                        <a href="https://www.linkedin.com/in/mahbub-hasan1" target="_blank" rel="noopener noreferrer">
                             <LinkedInIcon className="icon" style={{ fontSize: '30px' }} />
                         </a>
-                        <a href="https://mahbub-hasan.netlify.app/" target="_blank">
+                        <a href="https://mahbub-hasan.netlify.app/" target="_blank" rel="noopener noreferrer">
                             <WebIcon className="icon" style={{ fontSize: '30px' }} />
                         </a>
-                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank">
+                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" rel="noopener noreferrer">
                             <MailOutlineIcon className="icon" style={{ fontSize: '30px' }} />
                         </a>
-                        <a href="https://github.com/Md-Mahbub-Hasan" target="_blank">
+                        <a href="https://github.com/Md-Mahbub-Hasan" target="_blank" rel="noopener noreferrer">
                             <GitHubIcon className="icon" style={{ fontSize: '30px' }} />
                         </a>
                     </p>

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Navbar from '../Shared/Navbar/Navbar';
-import { GitHub } from '@material-ui/icons';
 import PopupCard from '../PopupCard/PopupCard';
 import './Projects.css';
 
@@ -71,7 +70,6 @@ const FakeProjectsData = [
         FrontEndRepo: 'CCC',
         BackEndRepo: 'CCC',
     },
-    
     {
         id: '6',
         img: 'https://faisalcep.github.io/assets/projects/social-buddy-ss/landing-page-th.png',
@@ -91,7 +89,7 @@ const FakeProjectsData = [
 const Projects = () => {
 
     const data = FakeProjectsData;
-    const [projectsData, setProjectsData] = useState(data);
+    const [projectsData] = useState(data);
 
     return (
         <>
@@ -103,8 +101,8 @@ const Projects = () => {
                     </div>
                     <div className=" d-flex flex-wrap">
                         {projectsData.map(project =>
-                            <div className="card-deck col-md-4 col-sm-6 col-12" style={{ marginBottom: '20px' }}>
-                                <div key={project.id} className="card">
+                            <div key={project.id} className="card-deck col-md-4 col-sm-6 col-12" style={{ marginBottom: '20px' }}>
+                                <div className="card">
                                     <img src={project.img} className="card-img-top" alt={project.name} />
                                     <div className="card-body">
                                         <PopupCard project={project}></PopupCard>

@@ -1,44 +1,59 @@
-import React from 'react';
-import LinkIcon from '@material-ui/icons/Link';
-import { GitHub } from '@material-ui/icons';
+import React, { useState } from 'react';
+import OpenInNewIcon from '@material-ui/icons/OpenInNew';
+
+const article = [
+    {
+        id: '1',
+        img: '',
+        title: 'article......',
+        Description: 'l....l',
+        articleLink: '/',
+    },
+    {
+        id: '2',
+        img: '',
+        title: 'article......',
+        Description: 'l....l',
+        articleLink: '/',
+    },
+    {
+        id: '3',
+        img: '',
+        title: 'article......',
+        Description: 'l....l',
+        articleLink: '/',
+    },
+]
 
 const MySomeArticles = () => {
+    const [articles] = useState(article);
     return (
         <div className="container">
-            <div style={{margin: '100px 0px 50px 0px'}}>
+            <div style={{ margin: '100px 0px 50px 0px' }}>
                 <h3 className="text-white">Some of My Article  </h3>
             </div>
             <div className="card-deck">
-                <div className="card">
-                    <img src="https://miro.medium.com/max/1280/1*aLg1-G2UAlaKpBopRnmCRg.png" className="card-img-top" alt="..." />
-                    <div className="card-body">
-                        <h5 className="card-title">Card title</h5>
-                        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                {
+                    articles.map(article => 
+                        <div className="card">
+                        <img src="https://miro.medium.com/max/1280/1*aLg1-G2UAlaKpBopRnmCRg.png" className="card-img-top" alt="..." />
+                        <div className="card-body">
+                            <h5 className="card-title">{article.title}</h5>
+                            <p className="card-text">{article.Description}</p>
+                        </div>
+                        
+                        <div className="card-footer">
+                            <small className="text-muted">
+                                <a href={article.articleLink} target="_blank" rel="noopener noreferrer">
+                                    <OpenInNewIcon className="icon" />
+                                </a>
+                            </small>
+                        </div>
                     </div>
-                    <div className="card-footer">
-                    <small className="text-muted"> <a href=""><GitHub className="icon" /></a> <a href=""><LinkIcon style={{float: 'right'}} className="icon" /></a> </small>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://miro.medium.com/max/1280/1*sX8rBJBol5dBp5WIJQrYyw.png" className="card-img-top" alt="..." />
-                    <div className="card-body">
-                        <h5 className="card-title">Card title</h5>
-                        <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                    <div className="card-footer">
-                    <small className="text-muted"> <a href=""><GitHub className="icon" /></a> <a href=""><LinkIcon style={{float: 'right'}} className="icon" /></a> </small>
-                    </div>
-                </div>
-                <div className="card">
-                    <img src="https://miro.medium.com/max/1280/1*QDmeWi-xnFxzfwbsTrxunQ.jpeg" className="card-img-top" alt="..." />
-                    <div className="card-body">
-                        <h5 className="card-title">Card title</h5>
-                        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    </div>
-                    <div className="card-footer">
-                    <small className="text-muted"> <a href=""><GitHub className="icon" /></a> <a href=""><LinkIcon style={{float: 'right'}} className="icon" /></a> </small>
-                    </div>
-                </div>
+
+                )}
+                
+                
             </div>
         </div>
     );

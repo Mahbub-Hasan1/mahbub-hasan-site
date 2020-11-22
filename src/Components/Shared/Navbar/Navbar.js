@@ -41,7 +41,7 @@ const Navbar = () => {
                     </li>
 
                     <li className="nav-item">
-                        <a href="https://drive.google.com/file/d/163NJKTjH2A4MFx8MnodnQmnffZdPIy9C/view?usp=sharing" target="_blank" >
+                        <a href="https://drive.google.com/file/d/163NJKTjH2A4MFx8MnodnQmnffZdPIy9C/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                         <Button variant="contained" color="primary">
                             Resume
                         </Button>

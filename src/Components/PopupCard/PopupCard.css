@@ -24,3 +24,11 @@
     color: #0D8AF0;
     font-weight: bold;
 }
+.repoStyle{
+    margin-left: 10px;
+}
+@media (max-width:260px) {
+    .repoStyle{
+        margin-left: 0px;
+    }
+}
