@@ -14,7 +14,7 @@ import Contact from './Components/Contact/Contact';
 
 function App() {
   return (
-    <Router>
+      <Router>
         <Switch>
           <Route path="/home">
             <Home />
@@ -32,10 +32,10 @@ function App() {
             <Contact />
           </Route>
           <Route exact path="/">
-              <Home />
+            <Home />
           </Route>
           <Route path="*">
-              <NoMatch />
+            <NoMatch />
           </Route>
         </Switch>
       </Router>

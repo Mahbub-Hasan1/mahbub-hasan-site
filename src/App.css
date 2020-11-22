@@ -7,13 +7,16 @@
 .homeBackground {
     background-color: #111430;
 }
+
 .icon{
-    color: #4F05BE;
+    color: #F7345F;
+    size: 40px;
+    margin-right: 7px;
 }
 .icon:hover{
-    color: #F7345F;
+    color: #f734c6;
+    cursor: pointer;
 }
-
 /* @media (max-width:992px) {
     .Illustration img{
         width: 350px;

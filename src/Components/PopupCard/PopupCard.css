@@ -1,0 +1,26 @@
+.project-name{
+    color: blue;
+    cursor: pointer;
+}
+.project-name:hover{
+    text-decoration: underline;
+}
+.close-btn{
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    float: right;
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #111430;
+}
+.tex-bold p {
+    font-size: 25px;
+    line-height: 25px;
+}
+.link-icon{
+    color: #0D8AF0;
+    font-weight: bold;
+}

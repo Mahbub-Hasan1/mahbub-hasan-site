@@ -24,11 +24,11 @@ const MySomeWorks = () => {
                     </div>
                     <div className="card-footer">
                         <small className="text-muted">
-                            <a href="https://github.com/Md-Mahbub-Hasan/creative-agency-client">
+                            <a href="https://github.com/Md-Mahbub-Hasan/creative-agency-client" target="_blank">
                                 <GitHub className="icon" />
                             </a>
 
-                            <a href="https://creative-agency-32149.web.app/">
+                            <a href="https://creative-agency-32149.web.app/" target="_blank">
                                 <LinkIcon style={{ float: 'right' }} className="icon" />
                             </a> 
                         </small>

@@ -8,9 +8,6 @@
     font-size: 30px;
 }
 @media (max-width:856px) {
-    .headerBackground{
-        background-image: linear-gradient(310deg, #4c04c0 90%, #F7345F 10%);
-    }
     .header-p{
         font-size: 15px;
     }
