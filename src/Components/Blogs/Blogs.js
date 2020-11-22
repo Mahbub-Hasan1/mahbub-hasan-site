@@ -1,58 +1,37 @@
 import React, { useState } from 'react';
 import Navbar from '../Shared/Navbar/Navbar';
-import LinkIcon from '@material-ui/icons/Link';
-import { GitHub } from '@material-ui/icons';
+import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 
 const FakeBlogsData = [
-    {
-        id: '1',
-        img: 'https://miro.medium.com/max/1280/1*aLg1-G2UAlaKpBopRnmCRg.png',
-        name: 'Simple Introduction to React.js',
-        Description: 'React is a library that used to create awesome user interface … hence it is a library it need some other…',
-        liveLink: 'CCC',
-        githubLink: 'CCC',
-    },
-    {
-        id: '2',
-        img: 'https://miro.medium.com/max/1280/1*sX8rBJBol5dBp5WIJQrYyw.png',
-        name: "Getting started with React Router",
-        Description: 'React is a library that used to create awesome user interface … hence it is a library it need some other…',
-        liveLink: 'CCC',
-        githubLink: 'CCC',
-    },
-    {
-        id: '3',
-        img: 'https://miro.medium.com/max/1280/1*QDmeWi-xnFxzfwbsTrxunQ.jpeg',
-        name: 'ExamHelpBD',
-        Description: 'ExamHelpBD is the Edtech platform for Teachers and Students. Any teacher can post notes and questions here. Students can read and practice tests from anywhere and anytime.',
-        liveLink: 'CCC',
-        githubLink: 'CCC',
-    },
-    {
-        id: '4',
-        img: 'https://miro.medium.com/max/576/1*V6IaCGp84AlPn2uEnfdcOA.png',
-        name: 'Catalyst Education - Web App',
-        Description: 'A complete Application for a coaching center, build with their custom requirements,Features : Students Database, payment management, Attendance system, mark distribution, online admission system, student portal etc',
-        liveLink: 'CCC',
-        githubLink: 'CCC',
-    },
-    {
-        id: '5',
-        img: 'https://miro.medium.com/max/1808/1*PR3klDbot3ZS9Kp69LYtHA.png',
-        name: 'Catalyst CRP - Web App',
-        Description: 'This is a Revenue management software , developed for track cost, revenue and profit of a organization .',
-        liveLink: 'CCC',
-        githubLink: 'CCC',
-    },
-    {
-        id: '6',
-        img: 'https://miro.medium.com/max/576/1*BC3oWovfs15DXUMC7Jc_vQ.png',
-        name: 'COVID-19 Stats',
-        Description: 'It is a API based APP for showing Global and Country wise Coronavirus Statistics .',
-        liveLink: 'CCC',
-        githubLink: 'CCC',
-    },
-]
+        {
+            id: '1',
+            img: 'https://miro.medium.com/max/502/1*KI1_0g6Dlz3m8_QKkTZ2qw.jpeg',
+            title: 'Some discussion about React.',
+            Description: 'Discussed: What is JSX?, What is npm?, What is React routers?, Default Props., What is Virtual DOM?',
+            articleLink: 'https://mahbub-hasan.medium.com/why-should-we-use-react-dc194b4c7a27',
+        },
+        {
+            id: '2',
+            img: 'https://miro.medium.com/max/700/1*U7f_zyAMRT_3uR2cRy3llA.jpeg',
+            title: 'INTERMEDIATE JAVASCRIPT, INTERVIEW QUESTIONS',
+            Description: 'Discussed: double equal vs triple equal, Null Vs Undefined, Block Scope, Apply map, filter, find on an array of objects.',
+            articleLink: 'https://mahbub-hasan.medium.com/intermediate-javascript-interview-questions-d83626f07a5a',
+        },
+        {
+            id: '3',
+            img: 'https://miro.medium.com/max/700/1*ZRV92399sgFGeWbzcAHjig.jpeg',
+            title: 'What I learned today about JavaScript:',
+            Description: 'Discussed: Coding Style, Best practice of comments, Client-side caching, Client-side Catch, Server-side caching',
+            articleLink: '/',
+        },
+        {
+            id: '4',
+            img: 'https://miro.medium.com/max/700/1*ZKknAq-txt7tTTYXWgk7CA.jpeg',
+            title: 'JAVASCRIPT FUNDAMENTAL CONCEPTS',
+            Description: 'Discussed: indexOf, push, Pop, Length, Shif, Math.ceil',
+            articleLink: '/',
+        },
+    ]
 
 const Blogs = () => {
 
@@ -69,25 +48,21 @@ const Blogs = () => {
                         <br />
                     </div>
                     <div className=" d-flex flex-wrap">
-                        
+
                         {blogsData.map(blogs =>
                             <div className="card-deck  col-md-4" style={{ marginBottom: '20px' }}>
                                 <div key={blogs.id} className="card">
                                     <img src={blogs.img} className="card-img-top" alt={blogs.name} />
                                     <div className="card-body">
-                                        <h5 className="card-title">{blogs.name}</h5>
+                                        <h5 className="card-title">{blogs.title}</h5>
                                         <p className="card-text">{blogs.Description}</p>
                                     </div>
 
                                     <div className="card-footer">
 
                                         <small className="text-muted">
-                                            <a href={blogs.githubLink} target="_blank" rel="noopener noreferrer">
-                                                <GitHub className="icon" />
-                                            </a>
-                                            
-                                            <a href={blogs.liveLink} target="_blank" rel="noopener noreferrer">
-                                                <LinkIcon style={{ float: 'right' }} className="icon" />
+                                            <a href={blogs.articleLink} target="_blank" rel="noopener noreferrer">
+                                                <OpenInNewIcon className="icon" />
                                             </a>
                                         </small>
                                     </div>

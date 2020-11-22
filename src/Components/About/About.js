@@ -6,6 +6,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import WebIcon from '@material-ui/icons/Web';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import myImg from '../../img/0.jpg';
 
 const About = () => {
     return (
@@ -14,7 +15,7 @@ const About = () => {
             <main className="row d-flex aboutBackground">
                 <div style={{ marginTop: "30px" }} className="col-md-5 col-sm-6 col-12 offset-md-1">
                     <div className="col-md-5 col-sm-6 col-12">
-                        <img src="https://portfolio-rewon.netlify.app/static/fca3f03fd80586810fe4aae03bb77dd9/a5370/model.png" alt="" className="img-fluid" />
+                        <img src={myImg} alt="" className="img-fluid myImg" />
                     </div>
                     <h5 className="header-h4 name">I'm <b>Mahbub Hasan</b></h5>
                     <p className="header-p">A self-motivated and enthusiastic web developer with a deep interest in JavaScript. To work in the Software industry with modern web technologies of different local & multinational Software/ IT agencies of Bangladesh and grow rapidly with increasing responsibilities.</p>

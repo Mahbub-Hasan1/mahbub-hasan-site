@@ -1,9 +1,12 @@
 import React from 'react';
 import Gallery from 'react-grid-gallery';
+import redOnion from '../../../img/redOnion.png';
+import creativeAgency from '../../../img/CreativeAgency.png';
+import volunteerNet from '../../../img/volunteerNetwork.png';
 
 const IMAGES =
 [{
-        src: "https://mahbubhasan.netlify.app/images/Creative.agency.PNG",
+        src: `${creativeAgency}`,
         thumbnail: "https://mahbubhasan.netlify.app/images/Creative.agency.PNG",
         thumbnailWidth: 320,
         thumbnailHeight: 174,
@@ -28,7 +31,7 @@ const IMAGES =
     caption: "ExamHelpBD is the Edtech platform for Teachers and Students. Any teacher can post notes and questions here. Students can read and practice tests from anywhere and anytime."
 },
 {
-    src: "https://imgur.com/X3h3ei5.png",
+    src: `${redOnion}`,
     thumbnail: "https://imgur.com/X3h3ei5.png",
     thumbnailWidth: 320,
     thumbnailHeight: 212,

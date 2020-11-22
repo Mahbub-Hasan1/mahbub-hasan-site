@@ -31,6 +31,9 @@
     padding-bottom: 7px;
     border-bottom: 5px solid #F7345F;
 }
+.myImg{
+    clip-path: circle(50% at 50% 50%);
+}
 /* .icon-mt{
     size: 60px;
 } */

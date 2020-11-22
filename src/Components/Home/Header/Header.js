@@ -5,6 +5,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import WebIcon from '@material-ui/icons/Web';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import myImg from '../../../img/0.jpg';
 import './Header.css'
 
 const Header = () => {
@@ -39,7 +40,7 @@ const Header = () => {
                     <Link to="/contact" style={{ backgroundColor: "#F7345F", color: "#fff" }} className="btn btn-brand">Hire me</Link>
                 </div>
                 <div className="col-md-5 col-sm-6 col-12">
-                    <img src="https://portfolio-rewon.netlify.app/static/fca3f03fd80586810fe4aae03bb77dd9/a5370/model.png" alt="" className="img-fluid" />
+                    <img src={myImg} alt="" style={{width:'300px', margin: '0 auto'}} className="myImg" />
                 </div>
             </main>
         </>
