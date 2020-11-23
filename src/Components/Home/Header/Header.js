@@ -39,8 +39,8 @@ const Header = () => {
                     </p>
                     <Link to="/contact" style={{ backgroundColor: "#F7345F", color: "#fff" }} className="btn btn-brand">Hire me</Link>
                 </div>
-                <div className="col-md-5 col-sm-6 col-12">
-                    <img src={myImg} alt="" style={{width:'300px', margin: '0 auto'}} className="myImg" />
+                <div className="col-md-5 col-sm-6 col-12 d-flex justify-content-center">
+                    <img src={myImg} alt="" style={{width:'300px'}} className="myImg" />
                 </div>
             </main>
         </>

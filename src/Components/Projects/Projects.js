@@ -1,11 +1,25 @@
 import React, { useState } from 'react';
 import Navbar from '../Shared/Navbar/Navbar';
 import PopupCard from '../PopupCard/PopupCard';
+import img6 from '../../img/work-6.PNG';
+import img7 from '../../img/work-7.PNG';
 import './Projects.css';
 
 const FakeProjectsData = [
     {
         id: '1',
+        img: `${img6}`,
+        name: 'Apartment Hunt',
+        Description: 'A homeowner can advertise his or her home. The user will be able to choose the house. And Also Users will be able to apply for rent. The user can see the list of his application. Home Wonner see..',
+        DB1:'💐Apartment Hunt is a Full Stack Apartment booking Application. User can choose his/her desire Apartment.',
+        DB2:'💐Firebase Authentication Application. Here Admin and user dashboard',
+        DB3:'💐User can view apartment details and they can submit a request for booking which is visible in the dashboard.',
+        DB4:'💐Admin can add new Apartment images and Apartment details in the site.Admin can see the rents list and rents details in admin dashboard.',
+        liveWeb: 'https://apartment-hunt-team-24.netlify.app/',
+        FrontEndRepo: 'https://github.com/Md-Mahbub-Hasan/Apartment-Hunt-Client',
+    },
+    {
+        id: '2',
         img: 'https://mahbubhasan.netlify.app/images/Creative.agency.PNG',
         name: 'Creative Agency',
         Description: 'Responsive IT Service Seller react app with firbase authentication, react router, bootstrap, node, express, mongodb,heroku, user, admin dashboard & so on',
@@ -18,7 +32,7 @@ const FakeProjectsData = [
         BackEndRepo: 'https://github.com/Md-Mahbub-Hasan/creative-agency-server',
     },
     {
-        id: '2',
+        id: '3',
         img: 'https://imgur.com/fxP7ERu.png',
         name: "Doctor's Portal",
         Description: 'A Single page web app with dashboard where people can pick the date and time and fix an appointment. A doctor can review his appointments and prescribe medicine to a Patient from his dashboard.',
@@ -30,7 +44,7 @@ const FakeProjectsData = [
         BackEndRepo: '/',
     },
     {
-        id: '3',
+        id: '4',
         img: 'https://mahbubhasan.netlify.app/images/TravelGuru.PNG',
         name: 'Travel Guru',
         Description: 'A single-page web app Used three methods of signing in. Where a user can select a desired destination and book a hotel there. Responsive react app with firbase authentication, react router, react hook form, bootstrap, and firbase hosting',
@@ -42,7 +56,7 @@ const FakeProjectsData = [
         FrontEndRepo: 'https://github.com/Md-Mahbub-Hasan/travel-guru-mahbub',
     },
     {
-        id: '4',
+        id: '5',
         img: 'https://i.imgur.com/1sZNRz2.png',
         name: 'volunteer-network',
         Description: 'Responsive react app with mongodb, firbase authentication, react router, react hook form, bootstrap, node, express, heroku, volunteer & admin dashboard',
@@ -50,11 +64,11 @@ const FakeProjectsData = [
         DB2:'💐Volunteer can search, register in any event and view the events they already registered.',
         DB3:'💐Admin can view all the volunteer registered in any events and delete any volunteer if needed, also admin can add new event.',
         DB4:'💐Developed using react js, mongodb, firbase authentication, react router, react hook form, bootstrap, node, express, heroku, and hosted in firebase.',
-        liveLink: 'https://volunteer-network-a77e6.web.app',
-        githubLink: 'https://github.com/Md-Mahbub-Hasan/volunteer-network-client',
+        liveWeb: 'https://volunteer-network-a77e6.web.app',
+        FrontEndRepo: 'https://github.com/Md-Mahbub-Hasan/volunteer-network-client',
     },
     {
-        id: '5',
+        id: '6',
         img: 'https://imgur.com/X3h3ei5.png',
         name: 'Red Onion foods',
         Description: 'A single page restaurant app where people are able to select food in their cart and checkout the cart with their information .',
@@ -67,7 +81,15 @@ const FakeProjectsData = [
         BackEndRepo: '/',
     },
     {
-        id: '6',
+        id: '7',
+        img: `${img7}`,
+        name: 'Athena Design',
+        Description: 'This is a simple team project. I Work Only Responsive & Some other option like Jira, Github Management & also led this project And solve team member problem.',
+        liveWeb: 'https://athena-design-team-24.netlify.app',
+        FrontEndRepo: 'https://github.com/Md-Mahbub-Hasan/athena-design-team-24',
+    },
+    {
+        id: '8',
         img: 'https://faisalcep.github.io/assets/projects/social-buddy-ss/landing-page-th.png',
         name: 'Social Buddy',
         Description: 'Responsive react app with material ui, react-router and jsonplaceholder api',
@@ -77,7 +99,7 @@ const FakeProjectsData = [
         liveWeb: 'https://mahbub-mybook.netlify.app/',
         FrontEndRepo: 'https://github.com/Md-Mahbub-Hasan/MyBook-Assignment-8',
     },
-    
+
 ]
 
 const Projects = () => {

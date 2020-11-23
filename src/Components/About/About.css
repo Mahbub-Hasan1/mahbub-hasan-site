@@ -32,8 +32,21 @@
     border-bottom: 5px solid #F7345F;
 }
 .myImg{
-    clip-path: circle(50% at 50% 50%);
+    border-radius: 30px;
+    border: 5px solid #F7345F;
 }
-/* .icon-mt{
-    size: 60px;
-} */
+@media (max-width:575px) {
+    .aboutBackground{
+        text-align: center;
+    }
+    .name{
+        width: 60%;
+        margin: 10px auto;
+        padding-bottom: 7px;
+        border-bottom: 5px solid #F7345F;
+    }
+    .headLineSkills{
+        margin: 10px auto;
+    }
+} 
+
