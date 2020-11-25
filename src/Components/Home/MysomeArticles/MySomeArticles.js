@@ -34,26 +34,26 @@ const MySomeArticles = () => {
             </div>
             <div className="card-deck">
                 {
-                    articles.map(article => 
-                        <div className="card">
-                        <img src={article.img} className="card-img-top" alt="..." />
-                        <div className="card-body">
-                            <h5 className="card-title">{article.title}</h5>
-                            <p className="card-text">{article.Description}</p>
-                        </div>
-                        
-                        <div className="card-footer">
-                            <small className="text-muted">
-                                <a href={article.articleLink} target="_blank" rel="noopener noreferrer">
-                                    <OpenInNewIcon className="icon" />
-                                </a>
-                            </small>
-                        </div>
-                    </div>
+                    articles.map(article =>
+                        <div key={article.id} className="card">
+                            <img src={article.img} className="card-img-top" alt="..." />
+                            <div className="card-body">
+                                <h5 className="card-title">{article.title}</h5>
+                                <p className="card-text">{article.Description}</p>
+                            </div>
 
-                )}
-                
-                
+                            <div className="card-footer">
+                                <small className="text-muted">
+                                    <a href={article.articleLink} target="_blank" rel="noopener noreferrer">
+                                        <OpenInNewIcon className="icon" />
+                                    </a>
+                                </small>
+                            </div>
+                        </div>
+
+                    )}
+
+
             </div>
         </div>
     );

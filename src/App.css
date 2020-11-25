@@ -17,8 +17,8 @@
     color: #f734c6;
     cursor: pointer;
 }
-/* @media (max-width:992px) {
-    .Illustration img{
-        width: 350px;
+@media (max-width:766px) {
+    .contact{
+        margin: 0 auto;
     }
-} */
+}

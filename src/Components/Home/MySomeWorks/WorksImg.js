@@ -2,7 +2,6 @@ import React from 'react';
 import Gallery from 'react-grid-gallery';
 import redOnion from '../../../img/redOnion.png';
 import creativeAgency from '../../../img/CreativeAgency.png';
-import volunteerNet from '../../../img/volunteerNetwork.png';
 
 const IMAGES =
 [{
